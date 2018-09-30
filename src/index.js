@@ -4,7 +4,8 @@ import {BrowserRouter as Router, Route, Link} from 'react-router-dom';
 
 import Home from './containers/Home';
 import About from './containers/About';
-
+ 
+import './index.scss';
 const App = () => (
   <Router>
     <>
@@ -32,4 +33,5 @@ if ('serviceWorker' in navigator) {
       console.error('Service worker has not been successfully registered. ', error);
     });
   });
+
 }
